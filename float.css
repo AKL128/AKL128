@@ -1,0 +1,7 @@
+body { font-size: 1.5em; }
+
+div#menu {
+	float: left;
+	width: 35%;
+	background-color: aqua;
+}
