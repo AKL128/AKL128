@@ -17,6 +17,7 @@ var headerHtml = `
 `
 header.insertAdjacentHTML('beforeend', headerHtml)
 
+// Resource: https://github.com/aj-4/5m-forum
 
 function addComment(comment) {
     var commentHtml = `
