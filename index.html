@@ -1,157 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKL128 Forum</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Script -->
-	<script src="scripts/idFormProcess.js"></script>
-	<script src="scripts/idFormValidate.js"></script>
-	<script src="scripts/idFormCalculate.js"></script>
 </head>
+
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
+  <header>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <div class="navbar">
+    <div id="image">
+      <a href="index.html"><img src="squad.jpg" alt="squad" width="256" height="256" src="index.html"></a>
     </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Anthony's Site with Framework</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Using Materialize Template</h5>
-      </div>
-      <div class="row center">
-        <div class="flex-container">
-		<div class="flex-item">Box 1</div>
-		<div class="flex-item">Box 2</div>
-		<div class="flex-item">Box 3</div>
-	</div>
-	<link rel="stylesheet" href="css/float.css">
-	<div id="menu">
-	Float testing is right here "floated" left.
-	</div>
-      </div>
-      <br><br>
-
-    </div>
+           <nav class="navigation hide" id="navigation">
+               <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+               <ul class="nav-list">
+                 <li class="nav-item"><a href="posts.html">New</a></li>
+                 <li class="nav-item"><a href="index.html">Explore</a></li>
+               </ul>
+           </nav>
+           <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+           <div class="search-box">
+                     <div>
+                         <select name="" id="">
+                             <option value="All">Everything</option>
+                             <option value="Titles">Posts</option>
+                             <option value="Users">Users</option>
+                         </select>
+                         <input type="text" name="q" placeholder="search ...">
+                         <button><i class="fa fa-search"></i></button>
+                     </div>
+                 </div>
   </div>
 
+
+</header>
 
   <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <tr>
-          <h3>Welcome to Anthony Luu's webpage</h3>
-		  <link rel="stylesheet" href="css/default.css">
-		  <table>
-		  <p>
-		  This is for quiz 5 of CSCE 464
-		  </p>
-		  </table>
-		  <form id="idForm" onsubmit="idFormProcess()">
-		  <table>
-		  
-			<tr>
-				
-				<td><label for="email">Email:</label></td>
-				<td><input id="email" type="text" name="email" size="25"></td>
-				<td>Password:</td>
-				<td><input type="password" size="30"></td>
-			</tr>
-			<tr>
-				<td>Date of Birth:</td>
-				<td>
-				<input type="date" id="DOB" name="DOB"
-				value="2022-02-11"
-				min="1900-01-01" max="2022-02-11">
-				</td>
-			</tr>
-			</table>
-			<table>
-			<tr>
-			<td><input type="submit" value="Complete your sign up"></td>
-			<td><input type="reset" value="Reset form"></td>
-			</tr>
-			</table>
-			
-		</form>
-			<table>
-			<td>
-			Bio:
-			</td>
-			</table>
-			<tr>
-			
-				<textarea name="bio" rows="10" cols="30"></textarea>
-			</tr>
-
-			<form action="/second.html">
-		        <input type="submit" value="Submit" />
-				<input type="reset" value="Reset" />
-			</form>
-      </tr>
-
-    </div>
-    <br><br>
-  </div>
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Bio</h5>
-          <p class="grey-text text-lighten-4">Bio Soon.</p>
 
 
+    <div class="subforum">
+      <div class="subforum-title">
+        <h1>Subforums</h1>
+      </div>
+      <div class="subforum-row">
+        <div class="subforum-stats subforum-column center">
+          <span># of Posts</span>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+
+        <div class="subforum-Title subforum-column">
+          <h1><a href="post.html">Subforum Title:</a></h1>
+          <p>Subforum Content: blah blah blah<p>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="subforum-info subforum-column">
+          <b><a href="">Last post</a></b> by <a href="">User</a>
+                    <br>on <small>6 March 2022</small>
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by Anthony Luu
+
+
+
+
+      <div class="subforum-row">
+        <div class="subforum-stats subforum-column center">
+          <span># of Posts</span>
+        </div>
+
+        <div class="subforum-Title subforum-column">
+          <h1><a href="">Subforum Title:</a></h1>
+          <p>Subforum Content: blah blah blah<p>
+        </div>
+        <div class="subforum-info subforum-column">
+          <b><a href="">Last post</a></b> by <a href="">User</a>
+                    <br>on <small>6 March 2022</small>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="subforum-row">
+        <div class="subforum-stats subforum-column center">
+          <span># of Posts</span>
+        </div>
+
+        <div class="subforum-description subforum-column">
+          <h1><a href="">Subforum Title:</a></h1>
+          <p>Subforum Content: blah blah blah<p>
+        </div>
+        <div class="subforum-info subforum-column">
+          <b><a href="">Last post</a></b> by <a href="">User</a>
+                    <br>on <small>6 March 2022</small>
+        </div>
       </div>
     </div>
-  </footer>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
+    <script src="js/function.js"></script>
+</body>
 </html>

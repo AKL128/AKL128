@@ -1,14 +1,292 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+/* Global Css */
 
-.icon-block {
-  padding: 0 15px;
+*{
+    box-sizing: border-box;
 }
-.icon-block .material-icons {
-	font-size: inherit;
+
+html{
+    font-size: 14px;
+    font-family: 'Jost', sans-serif;
+    background-color:rgb(0,0,0);
+    color:#FEFEFE;
+}
+
+a{
+  color: #98ff98;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+h1{
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+
+/* index */
+
+.container{
+  margin: 20px;
+  padding: 20px;
+
+}
+
+.subforum{
+  margin-top: 20px;
+}
+
+.subforum-title{
+  background-color: #292B2E;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 4px;
+}
+
+.subforum-description *{
+  margin-block: 0;
+
+}
+
+.subforum-row{
+  display: grid;
+  grid-template-columns: 10% 75% 15%;
+}
+
+.subforum-column{
+  padding: 10px;
+  margin: 4px;
+  border-radius: 5px;
+  background-color: #111314;
+}
+
+.center{
+  display: flex;
+  justify-content: : center;
+  align-items: center;
+}
+
+@media screen and (max-width: 460){
+  .container{
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .subforum-row{
+    display: grid;
+    grid-template-columns: 10% 75% ;
+    grid-template-rows: 15%;
+  }
+
+  .subforum-column{
+    padding: 10px;
+    margin: 4px;
+    border-radius: 5px;
+    background-color: #111314;
+  }
+}
+
+div#image {
+  float: left;
+  margin: 20px 0 10px;
+
+}
+
+  /* Nav Bar*/
+
+header{
+    margin-inline: 10px;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+}
+.navigation{
+    background-color:#292B2E;
+    padding: 10px;
+    width: 20%;
+    display: inline-block;
+    border-radius: 5px;
+    max-height: 80px;
+    margin-right:10px;
+}
+
+.close-icon i{
+    font-size:60px;
+    float: left;
+    cursor: pointer;
+}
+
+.nav-list{
+    list-style-type:none;
+    overflow: hidden;
+}
+
+.nav-item a{
+    float: right;
+    display:block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color:#fff;
+}
+
+.nav-item a:hover{
+    background-color: rgb(0,0,0,0.1);
+}
+
+.hide{
+    display: none;
+}
+
+.bar-icon{
+    font-size: 60px;
+    display: inline-block;
+    margin-right:10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Search */
+
+.search-box{
+    margin-top: 20px;
+    padding: 40px;
+    display:flex;
+    justify-content: right;
+}
+
+.search-box select{
+    padding: 10px;
+    color: #fff;
+    background-color: #666666;
+}
+
+.search-box input{
+    padding: 10px;
+    background-color: #666666;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.search-box button{
+    padding: 10px;
+    background-color:#292B2E;
+    color:#000000;
+}
+
+.search-box button:hover{
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+}
+
+
+
+/* Posts */
+
+.table-head{
+    display: flex;
+}
+
+.table-head div{
+    padding: 5px;
+    margin: 2px;
+    background-color: #2C2C2C;
+    font-weight: bold;
+}
+
+.table-head .status{
+    flex: 5%;
+}
+
+.table-head .subjects{
+    flex: 70%;
+}
+
+.table-head .replies{
+    flex: 10%;
+}
+
+.table-head .last-reply{
+    flex: 15%;
+}
+
+/* posts table's body  */
+
+.table-row{
+    display: flex;
+}
+
+.table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
+    padding: 5px;
+    margin: 2px;
+    background-color: #131415;
+}
+
+.table-row .status{
+    flex: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table-row .subjects{
+    flex: 70%;
+}
+
+.table-row .replies{
+    flex: 10%;
+}
+
+.table-row .last-reply{
+    flex: 15%;
+}
+
+/* navigation path*/
+.navigate{
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.navigate a{
+    color: #fff;
+}
+
+.navigate a:hover{
+    color:#FF0042;
+    font-weight: bolder;
+}
+
+/* Pagination*/
+
+.pagination{
+    padding: 20px;
+    font-size: 15px;
+}
+
+.pagination a{
+    color: #fff;
+    margin-inline: 5px;
+    padding: 5px 10px;
+    border: solid 0.5px #fff;
+}
+
+.pagination a:hover{
+    opacity: 0.5;
+}
+
+.note{
+    background-color:#111314;
+    padding: 20px;
+    display: block;
+}
+
+.note span{
+    font-size: 20px;
+    margin-block: 5px;
 }
