@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKL128 Forum</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <header>
+
+  <div class="navbar">
+    <div id="image">
+      <a href="index.html"><img src="squad.jpg" alt="squad" width="256" height="256" src="index.html"></a>
+    </div>
+           <nav class="navigation hide" id="navigation">
+               <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+               <ul class="nav-list">
+                 <li class="nav-item"><a href="posts.html">New</a></li>
+                 <li class="nav-item"><a href="index.html">Explore</a></li>
+               </ul>
+           </nav>
+           <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+           <div class="search-box">
+                     <div>
+                         <select name="" id="">
+                             <option value="All">Everything</option>
+                             <option value="Titles">Posts</option>
+                             <option value="Users">Users</option>
+                         </select>
+                         <input type="text" name="q" placeholder="search ...">
+                         <button><i class="fa fa-search"></i></button>
+                     </div>
+                 </div>
+  </div>
+</header>
+
+
+    <div class="main">
+        <div class="header">
+        </div>
+        <textarea></textarea>
+        <button>Reply</button>
+        <div class="comments">
+        </div>
+    </div>
+    <script src="function.js"></script>
+    <script src="comment.js"></script>
+    <style>
+        body {
+            margin: 10px 60px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        h1, h4, ol {
+            margin: 0;
+        }
+        p {
+            margin: 5px 0;
+        }
+        textarea {
+            width: 80%;
+            height: 80px;
+        }
+        button {
+            display: block;
+            margin: 10px 0;
+        }
+        .top-bar {
+
+            padding: 0 40px;
+        }
+        .main {
+            background-color: #222222;
+            padding: 10px 40px;
+        }
+        .comments {
+            margin: 40px 0;
+        }
+        .comment {
+            margin: 10px 0;
+        }
+        .row {
+            padding: 5px 0;
+        }
+        .bottom, .top-comment {
+            display: flex;
+            color: grey;
+            font-size: 12px;
+        }
+        .timestamp {
+            padding-right: 10px;
+        }
+        .comment-ts {
+            padding-left: 10px;
+        }
+    </style>
+</body>
+</html>
