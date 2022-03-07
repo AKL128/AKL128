@@ -1,5 +1,6 @@
-### Hi there 👋
+### CSCE 464
 
+I had accidentally been commiting to another repository that I did not linked for the midterm presentation midway through my coding of this project. The repository is https://github.com/AKL128/CSCE-464 for the commits history.
 <!--
 **AKL128/AKL128** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
