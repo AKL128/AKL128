@@ -1,8 +1,3 @@
-// Reference
-// Title: 5m-forum
-//
-// Author: Arron Jack
-// Resource: https://github.com/aj-4/5m-forum
 
 var id = window.location.search.slice(1);
 var thread = threads.find(t => t.id == id);
@@ -21,6 +16,8 @@ var headerHtml = `
     </div>
 `
 header.insertAdjacentHTML('beforeend', headerHtml)
+
+// Resource: https://github.com/aj-4/5m-forum
 
 function addComment(comment) {
     var commentHtml = `
